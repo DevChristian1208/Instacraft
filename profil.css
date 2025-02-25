@@ -1,0 +1,59 @@
+.profilPic{
+    border-radius:50%;
+    width:200px;
+    height:200px;
+}
+
+.mainContent{
+    padding-top:120px;
+}
+
+.headContent{
+    display:flex;
+    justify-content: center;
+}
+
+.infoContainer{
+    display:flex;
+    flex-direction: column;
+    margin-left:50px;
+}
+
+.nameAndFollowContainer{
+    display:flex;
+    align-items: center;
+    justify-content: flex-start
+} 
+
+.followButton{
+    height:35px;
+    width: 100px;
+    color: #ffffff;
+    background: linear-gradient(45deg, #007bff, #00d2ff);
+    margin-left: 25px;
+    height: 40px;
+    border-radius: 25px;
+    font-size: 17px;
+    cursor: pointer;
+    width: 120px;
+    border: none;
+    outline: none;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.followButton:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1); 
+}
+
+.followsContainer{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:330px;
+    
+}

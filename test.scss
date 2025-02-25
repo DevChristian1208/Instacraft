@@ -1,0 +1,43 @@
+$primaryColor: rgba(82, 131, 180, 0.133); // SCSS Variable
+@mixin displayFlex{  //Mixins, wiederverwendbare Code-Blöcke 
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    padding: 10px;
+    background-color: grey;
+}
+
+.primary{
+    @extend .button;
+}
+
+body{
+    padding:10px;
+    background-color: $primaryColor;
+}
+
+h1{
+    @include displayFlex;
+}
+
+.button2{
+    @include displayFlex;
+}
+
+@mixin button-style($color, $padding: 10px) {
+    padding: $padding;         // $padding ist eine Variable, Standardwert ist 10px
+    background-color: $color;  // $color ist eine Variable, die übergeben werden muss
+    border-radius: 5px;
+    color: white;
+  }
+  
+  .button-primary {
+    @include button-style(blue);  // Verwendet den Standardwert für $padding und setzt $color auf blue
+  }
+  
+  .button-secondary {
+    @include button-style(red, 15px);  // Setzt $color auf red und $padding auf 15px
+  }

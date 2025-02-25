@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InstaCraft</title>
+<link rel="icon" type="image/x-icon" href="./img/icon-1562139_1280.png">
+<script src="./script.js"></script>
+
+<link rel="stylesheet" href="./style.css">
+</head>
+<body onload="loadUserCommentsFromLocalStorage(); render()">
+    <header>
+        <div class="headerDiv">
+            <img class="headerLogo" src="./img/icon-1562139_1280.png">
+            <h2>InstaCraft</h2>
+        </div>
+        <input class="inputfieldheader" type="text" placeholder="Suchen">
+        <button class="searchButton">Suchen</button>
+    </header>
+<!-- Content -->
+
+<div class="MainContainer">
+
+<!-- Navbar -->
+<div class="navbar">
+<div class="navbarsectiondiv">
+    <img class="logonavbar" src="./img/home-146585_640.webp">
+    <b class="icons">Startseite</b>
+</div>
+
+<div class="navbarsectiondiv">
+    <img class="logonavbar" src="./img/magnifying-glass-1083373_1280.webp">
+    <span class="icons">Suchen</span>
+</div>
+
+<div class="navbarsectiondiv">
+    <img class="logonavbar" src="./img/compass-151536_1280.webp">
+    <span class="icons">Entdecken</span>
+</div>
+
+<div class="navbarsectiondiv">
+    <img class="logonavbar" src="./img/projector-29206_1280.png">
+    <span class="icons">Reels</span>
+</div>
+
+<div class="navbarsectiondiv">
+    <img class="logonavbar" src="./img/notification-5580514_1280.webp">
+    <span class="icons">Nachrichten</span>
+</div>
+
+<div class="navbarsectiondiv">
+    <img class="logonavbar" src="./img/bell-1096279_1280.webp">
+    <span class="icons">Benachrichtigungen</span>
+</div>
+
+<div class="navbarsectiondiv">
+    <img class="logonavbar" src="./img/leave-1727488_1280.png">
+    <span class="icons">Erstellen</span>
+</div>
+
+<div class="navbarsectiondivprofil">
+    <img class="logonavbarprofil" src="./img/bild2.jpg">
+    <span class="spanprofil icons" >Christian</span>
+</div>
+</div>
+
+<div class="contentdiv" id="content"></div>
+
+ <!-- Profil Vorschläge -->
+<div class="containerprofile">
+<div class="suggestionsforyou">
+<h2 class="suggestionsforyouheadline">Vorschläge für dich</h2>
+<span class="showeverything">Alle ansehen</span>
+</div>
+<div class="profile1">
+    <img class="profillogo" src="./img/jpbild.png" onclick="window.location.href='profil.html';">
+    <div class="nameandfollowdiv" onclick="window.location.href='profil.html';">
+        <span class="profilename">jp201199</span>
+        <span class="followsyou">Folgt dir</span>
+    </div>
+    <span onclick="subscribe(this)" id="subscribe" class="subscribe1">Abonnieren</span>
+</div>
+<div class="profile1">
+    <img class="profillogo" src="./img/Bildschirmfoto 2024-02-23 um 19.29.55.png" onclick="window.location.href='profil.html';">
+    <div class="nameandfollowdiv" onclick="window.location.href='profil.html';">
+    <span class="profilename">lea_schuberth</span>
+    <span class="followsyou">Folgt dir</span>
+    </div>
+<span onclick="subscribe(this)" id="subscribe1"  class="subscribe2">Abonnieren</span>
+</div>
+<div class="profile1">
+    <img class="profillogo" src="./img/Bildschirmfoto 2024-02-23 um 19.36.18.png" onclick="window.location.href='profil.html';">
+    <div class="nameandfollowdiv" onclick="window.location.href='profil.html';">
+    <span class="profilename">franzii_tiumen</span>
+    <span class="followsyou">Folgt dir</span>
+    </div>
+<span onclick="subscribe(this)" id="subscribe2" class="subscribe3">Abonnieren</span>
+</div>
+<div class="profile1">
+    <img class="profillogo" src="./img/Bildschirmfoto 2024-02-23 um 19.44.40.png" onclick="window.location.href='profil.html';">
+    <div class="nameandfollowdiv" onclick="window.location.href='profil.html';">
+    <span class="profilename">lukaswimmrer</span>
+    <span class="followsyou">Folgt dir</span>
+    </div>
+<span onclick="subscribe(this)" class="subscribe4">Abonnieren</span>
+</div>
+</body>
+</html>
