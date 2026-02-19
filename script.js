@@ -207,10 +207,6 @@ function render() {
     }
 }
 
-/** 
- * Add a new comment and push it to the usercomment in the posts array 
-*/ 
-
 function addComment(i) {
     let input = document.getElementById(`textareafield${i}`).value;
     posts[i].usercomment.push(input);
@@ -219,20 +215,11 @@ function addComment(i) {
     
 }
 
-/**
- * Saves all user comments from posts to local storage.
- * Uses `posts.map` to extract the `usercomment` property from each post.
- */
-
 function saveUserCommentsToLocalStorage() {
     const userCommentsJSON = JSON.stringify(posts.map(post => post['usercomment']));
     localStorage.setItem('userComments', userCommentsJSON);
 
 }
-
-/**
- * load safed user comments from local storage and push it in the usercomment in posts array
- */
 
 function loadUserCommentsFromLocalStorage() {
     const userCommentsJSON = localStorage.getItem('userComments');
